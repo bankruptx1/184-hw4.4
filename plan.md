@@ -1,6 +1,6 @@
 # STAT 184 HW 4.4 Project Plan
 
-## Goal
+## Goal.
 
 My goal is to organize my HW #4.3 analysis into a GitHub repository where someone else can understand and reproduce my results/work. I also want to use branches, issues, commits, and a pull request to track my progress and manage changes, and to follow requirements.
 
