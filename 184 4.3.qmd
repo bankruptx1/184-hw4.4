@@ -107,7 +107,8 @@ This organization makes it possible to compare winning and losing performances w
 ```{r}
 #| include: false
 # Read only the columns required for the research question.
-games <- readr::read_csv("games.csv", show_col_types = FALSE) |>
+games <- readr::read_csv(unz("games(csv).zip", "games.csv"),
+                         show_col_types = FALSE) |>
   select(id, game_date, season, status_type_completed,
          home_display_name, away_display_name, home_score, away_score)
 valid_games <- games |>
@@ -821,7 +822,8 @@ show_table(depth_stats,
 
 ```r
 # Read only the columns required for the research question.
-games <- readr::read_csv("games.csv", show_col_types = FALSE) |>
+games <- readr::read_csv(unz("games(csv).zip", "games.csv"),
+                         show_col_types = FALSE) |>
   select(id, game_date, season, status_type_completed,
          home_display_name, away_display_name, home_score, away_score)
 valid_games <- games |>
